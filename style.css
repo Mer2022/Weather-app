@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+.Heading {
+    color: white;
+    text-align: center;
+}
+.Navbar {
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(12,12,129,1) 35%, rgba(0,212,255,1) 100%); 
+}
