@@ -21,7 +21,7 @@ function find(c){
 }
 // API key is being set up
 
-var APIKey="a0aca8a89948154a4182dcecc780b513";
+var APIKey="e7df9921dfd1d5f5d129ce1cd666c3b7";
 function displayWeather(event){
     event.preventDefault();
     if(searchCity.val().trim()!==""){
