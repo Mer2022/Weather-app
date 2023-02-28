@@ -20,19 +20,13 @@
   <div class="container">
         <div class="row">
         <div class="col-sm-4 bg-light">
-            <!--THis is the HTML form for handling the inputs-->
-            <h4 class="pt-1"><strong>Search for a City:</strong></h4>
-            <!--This is the text box for capturing the search city Name-->
+            <h4 class="pt-1">Search for a City:</h4>
             <div class="input-group mb-3">
                 <input type="text" class="form-control"id="search-city" aria-label="City Search" aria-describedby="search-button">
                 <div class="input-group-append">
                     <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
                 </div>
             </div>
-            <!--Searched city history section -->
-            <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
-            <ul class="list-group">
-            </ul>
         </div>   
         <div class="col-sm-8">
             <div class="row ml-2 border border-dark rounded">
@@ -41,7 +35,6 @@
                     <p>Temperature:<span class="current" id="temperature"></span></p>
                     <p>Humidity:<span class="current" id="humidity"></span></p> 
                     <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
-                    <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p> 
                 </div>
             </div>
             <div class="col-sm-12" id ="future-weather">
