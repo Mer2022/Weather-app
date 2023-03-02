@@ -6,6 +6,7 @@ var cityName=document.getElementById("current-city")
 var searchCity=document.getElementById("search-city")
 var temperature=document.getElementById("temperature")
 var humidity=document.getElementById("humidity")
+var windSpeed=document.getElementById("wind-speed")
 
     function fetchWeather(city){
         var queryURL= "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&APPID=" + APIKey;
@@ -15,11 +16,11 @@ var humidity=document.getElementById("humidity")
           return res.json();
         })
         .then(function (data) {
-         console.log(data)
+         console.log("data",data)
          cityName.textContent=data.name
          temperature.textContent=data.main.temp
          humidity.textContent=data.main.humidity
-        
+         windSpeed.textContent=data.wind.speed
         })
         .catch(function (err) {
           console.error(err);
